@@ -19,26 +19,50 @@
 19.Person's birthplace: "New York City"         
 20. Distance between two cities: 200.5 */            
 
-let cityTemp: number = 25.5;
-let orderStatus: boolean = true;
-let phoneNo: string = "123-456-7890";
-let accBalance: number = 1000.50;
-let emailAddress: string = "john.doe@example.com";
-let latitude: number = 37.7749;
-let longitude: number = -122.4194;
-let coordinates: number[] = [37.7749, -122.4194];
-let maritalStatus: boolean = true;
-let occupation: string = "Software Engineer";
-let favColour: string = "Blue";
-let currentYear: number = 2023;
-let noOfFollowers: number = 1000000;
-let rating: number = 7.5;
-let bloodType: string = 'A';
-let bookTitle: string = "To Kill a Mockingbird";
-let noOfEmp: number = 500;
-let eventTime: string = "2:30 pm";
-let country: string = "United States";
-let eyeColor: string = "Brown";
-let birthplace: string = "New York City";
-let distance: number = 200.5;
+interface personInfo {
+    cityTemp: number,
+    orderStatus: boolean,
+    phoneNo: string,
+    accBalance: number,
+    emailAddress: string,
+    coordinates: number[],
+    maritalStatus: boolean,
+    occupation: string,
+    favColour: string,
+    currentYear: number,
+    noOfFollowers: number,
+    rating: number,
+    bloodType: string,
+    bookTitle: string,
+    noOfEmp: number,
+    eventTime: string,
+    country: string,
+    eyeColor: string, 
+    birthplace: string,
+    distanceBetweenCities: number
+}
 
+let person: personInfo = {
+    cityTemp: 25.5,
+    orderStatus: true,
+    phoneNo: "123-456-7890",
+    accBalance: 1000.50,
+    emailAddress: "john.doe@example.com",
+    coordinates: [37.7749, -122.4194],
+    maritalStatus: true,
+    occupation: "Software Engineer",
+    favColour: "Blue",
+    currentYear: 2023,
+    noOfFollowers: 1000000,
+    rating: 7.5,
+    bloodType: 'A',
+    bookTitle: "To Kill a Mockingbird",
+    noOfEmp: 500,
+    eventTime: "2:30 pm",
+    country: "United States",
+    eyeColor: "Brown", 
+    birthplace: "New York City",
+    distanceBetweenCities: 200.5
+} 
+
+console.log(person);
