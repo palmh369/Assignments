@@ -3,9 +3,10 @@ number greater than 1 that has no positive divisors other than 1 and itself. */
 
 function isPrimeNumber(n:number): boolean{
     let divisor:number[] = [];
-    if(n<1)
+    if(n<1){
+        console.log(`number should be greater than 0`);
          return false;
-    
+    }
     for(let i=1; i<=n; i++){
         if(n%i === 0 ){
            divisor.push(i);
@@ -21,7 +22,7 @@ function isPrimeNumber(n:number): boolean{
     }
     
 }
-console.log(`7 is prime : ` + isPrimeNumber(7));
-console.log(`25 is prime : ` + isPrimeNumber(25));
-console.log(`1 is prime : ` + isPrimeNumber(1));
+console.log(`Is 7 prime : ` + isPrimeNumber(7));
+console.log(`Is 25 prime : ` + isPrimeNumber(25));
+console.log(`Is 1 prime : ` + isPrimeNumber(1));
    
